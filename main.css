@@ -1,92 +1,133 @@
-
 h1 {
-    text-align: center;
-    color: white;
-    font-size: 6rem;
-    padding: 50px;
+  text-align: center;
+  color: white;
+  font-size: 6rem;
+  padding: 50px;
 }
 
 .container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    width: 1260px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 1260px;
 }
 
 .container div {
-    width: 400px;
-    height: 500px;
-    text-align: center;
-    background-image: url("heart.jpg");
-    background-position: center; 
-    font-size: 1.5rem;
-    font-weight: 1000;
+  width: 400px;
+  height: 500px;
+  text-align: center;
+  background-image: url("heart.jpg");
+  background-position: center;
+  font-size: 1.5rem;
+  font-weight: 1000;
 }
 
 .container p {
-    font-size: 1.2rem;
-    font-style: italic;
-    font-weight: 500;
+  font-size: 1.2rem;
+  font-style: italic;
+  font-weight: 500;
 }
 
 .containerTwo {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    width: 1260px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 1260px;
 }
 
 .containerTwo div {
-    width: 400px;
-    height: 500px;
-    text-align: center;
-    background-image: url("heart.jpg");
-    background-position: center; 
-    font-size: 1.5rem;
-    font-weight: 1000;
+  width: 400px;
+  height: 500px;
+  text-align: center;
+  background-image: url("heart.jpg");
+  background-position: center;
+  font-size: 1.5rem;
+  font-weight: 1000;
 }
 
 .containerTwo p {
-    font-size: 1.2rem;
-    font-style: italic;
-    font-weight: 500;
+  font-size: 1.2rem;
+  font-style: italic;
+  font-weight: 500;
 }
 
 .containerThree {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    width: 1260px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 1260px;
 }
 
 .containerThree div {
-    width: 400px;
-    height: 500px;
-    text-align: center;
-    background-image: url("heart.jpg");
-    background-position: center; 
-    font-size: 1.5rem;
-    font-weight: 1000;
+  width: 400px;
+  height: 500px;
+  text-align: center;
+  background-image: url("heart.jpg");
+  background-position: center;
+  font-size: 1.5rem;
+  font-weight: 1000;
 }
 
 .containerThree p {
-    font-size: 1.2rem;
-    font-style: italic;
-    font-weight: 500;
+  font-size: 1.2rem;
+  font-style: italic;
+  font-weight: 500;
 }
 
 img {
-    margin-top: 40px;
-    max-width: 500px;
-    max-height: 325px;
+  margin-top: 40px;
+  max-width: 500px;
+  max-height: 325px;
 }
 
-#footer {
-    position: fixed;
-    Width: 100%;
-    bottom: 0;
-    text-align: center;
-  }
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  /* height:60px; */
+}
+
+.scene {
+  width: 220px;
+  height: 300px;
+  border: 1px solid #ccc;
+  margin: 4px;
+  perspective: 600px;
+}
+
+.card {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  position: relative;
+}
+
+.card.is-flipped {
+  transform: rotateY(180deg);
+}
+
+.card__face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  backface-visibility: hidden;
+  background-image: url("heart.jpg");
+  background-position: center;
+}
+
+/* .card__face--front {
+  
+} */
+
+.card__face--back {
+  position: absolute;
+  text-align: center;
+  transform: rotateY(180deg);
+}
